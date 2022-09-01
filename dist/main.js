@@ -1,0 +1,1 @@
+(()=>{"use strict";var n=[1,2,3].map((function(n){return 10*n}));console.log(n)})();
