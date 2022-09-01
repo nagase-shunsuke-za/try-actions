@@ -22,9 +22,20 @@ jobs:
       - name: npm install
         run: npm install
       - name: test & build
+        id: build
         run:  |
           npm run test
           npm run build
+          git add -N .
+          echo "::set-output name=count::$(git diff --name-only | wc -l)"
+      - name: commit & push
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git commit -m "push build file"
+          git push
+        if: steps.build.outputs.count > 0
       - name: upload dist file
         uses: actions/upload-artifact@v3
         with:
