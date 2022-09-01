@@ -1,1 +1,1 @@
-(()=>{"use strict";var n=[1,2,3].map((function(n){return 10*n}));console.log(n)})();
+(()=>{"use strict";var o=[1,2,3].map((function(o){return 10*o}));console.log(o),console.log(o)})();
