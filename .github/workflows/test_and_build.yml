@@ -36,6 +36,10 @@ jobs:
           git commit -m "push build file"
           git push
         if: steps.build.outputs.count > 0
+      - name: deploy
+        env:
+          DEPLOY_URL: ${{ secrets.DEPLOY_URL }}
+        run: echo $DEPLOY_URL
       - name: upload dist file
         uses: actions/upload-artifact@v3
         with:
