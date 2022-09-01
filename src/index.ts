@@ -5,4 +5,3 @@ const numList = a();
 const addNumList = b(numList);
 
 console.log(addNumList);
-console.log(addNumList);
