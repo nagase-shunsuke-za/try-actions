@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "description": "test project",
-  "name": "my-webpack-project",
+  "name": "try_actions",
   "scripts": {
     "test": "jest",
     "build": "webpack --mode=production --node-env=production",
