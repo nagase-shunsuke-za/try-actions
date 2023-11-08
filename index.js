@@ -3,6 +3,10 @@ const fff = function() {
 
 }
 
-const pr = function() {
+const pr1 = function() {
+
+}
+
+const pr2 = function() {
 
 }
