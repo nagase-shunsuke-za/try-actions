@@ -1,4 +1,4 @@
-// 既存ファイル
-const f = function() {
-
+// 既存ファイル1
+const f1 = function() {
+    return 100
 }
