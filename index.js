@@ -4,8 +4,8 @@ const fff = function() {
 }
 
 // 既存ファイルPR1
-const pr1 = function() {
-
+const f1 = function() {
+    return 100
 }
 
 // 既存ファイルPR2
