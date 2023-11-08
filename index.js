@@ -1,8 +1,4 @@
-// 既存ファイルPR
-const fff = function() {
-
-}
-
-const pr = function() {
+// 既存ファイル
+const f = function() {
 
 }
