@@ -6,4 +6,3 @@ const fff = function() {
 const pr = function() {
 
 }
-
