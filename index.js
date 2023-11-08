@@ -1,4 +1,8 @@
-// 既存ファイル
+// 既存ファイルPR
 const f = function() {
+
+}
+
+const reset = function() {
 
 }
