@@ -24,6 +24,8 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.ACTIONS_GITHUB_TOKEN }}
       with:
-        title: "New issue from PR to main"
-        body: "An issue created automatically when a PR is made to the main branch."
-        repo: "nagase-shunsuke-za/try-actions"
+        assignees: ''
+        milestone: ''
+        filename: '.github/ISSUE_TEMPLATE/ISSUE_TEMPLATE.md'
+        update_existing: false
+        search_existing: false
