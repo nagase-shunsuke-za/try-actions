@@ -6,12 +6,20 @@ on:
       - main
 
 jobs:
-  example-job:
+  create_issue:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
+    - name: checkout
+      uses: actions/checkout@v3
+      with:
+        token: ${{ secrets.ACTIONS_GITHUB_TOKEN }}
 
-    - name: Run a sample script
-      run: echo "This is a pull request to the main branch!"
+    - name: Create an issue
+      uses: JasonEtco/create-an-issue@v2
+      env:
+        GITHUB_TOKEN: ${{ secrets.ACTIONS_GITHUB_TOKEN }}
+      with:
+        title: "New issue from PR to main"
+        body: "An issue created automatically when a PR is made to the main branch."
+        repo: "nagase-shunsuke-za/try-actions"
