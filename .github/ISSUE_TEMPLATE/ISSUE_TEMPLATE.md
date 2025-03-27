@@ -1,6 +1,6 @@
 ---
 name: 'PR確認issue'
-about: ''
+about: 'test issue'
 title: '【PR確認】 '
 labels: ''
 assignees: ''
