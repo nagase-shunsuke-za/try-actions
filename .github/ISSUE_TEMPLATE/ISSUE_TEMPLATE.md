@@ -1,5 +1,6 @@
 ---
 name: 'PR確認issue'
+about: ''
 title: '【PR確認】 '
 labels: ''
 assignees: ''
