@@ -1,6 +1,5 @@
 ---
-name: PR確認issue
-about: test markdown file
+name: 'PR確認issue'
 title: '【PR確認】 '
 labels: ''
 assignees: ''
