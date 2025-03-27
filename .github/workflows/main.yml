@@ -16,7 +16,7 @@ jobs:
     - name: Create an issue
       uses: JasonEtco/create-an-issue@v2
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.ACTIONS_GITHUB_TOKEN }}
       with:
         title: "New issue from PR to main"
         body: "An issue created automatically when a PR is made to the main branch."
