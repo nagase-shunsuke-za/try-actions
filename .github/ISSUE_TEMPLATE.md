@@ -1,8 +1,11 @@
 ---
-name: TEST
-about: test markdown file
-title: "[TEST]: "
+name: 'PR確認issue'
+title: '【PR確認】 '
 labels: ''
 assignees: ''
 
 ---
+
+## Github issue
+
+XXX
