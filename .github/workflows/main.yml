@@ -11,9 +11,13 @@ jobs:
 
     steps:
     - name: checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         token: ${{ secrets.ACTIONS_GITHUB_TOKEN }}
+    - run: |
+        ls -a
+        echo "" 
+        git branch -a
 
     - name: Create an issue
       uses: JasonEtco/create-an-issue@v2
