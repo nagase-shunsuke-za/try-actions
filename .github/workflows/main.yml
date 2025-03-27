@@ -11,15 +11,21 @@ jobs:
 
     steps:
     - name: checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         token: ${{ secrets.ACTIONS_GITHUB_TOKEN }}
+    - run: |
+        ls -a
+        echo "" 
+        git branch -a
 
     - name: Create an issue
       uses: JasonEtco/create-an-issue@v2
       env:
         GITHUB_TOKEN: ${{ secrets.ACTIONS_GITHUB_TOKEN }}
       with:
-        title: "New issue from PR to main"
-        body: "An issue created automatically when a PR is made to the main branch."
-        repo: "nagase-shunsuke-za/try-actions"
+        assignees: ''
+        milestone: ''
+        filename: '.github/ISSUE_TEMPLATE/ISSUE_TEMPLATE.md'
+        update_existing: false
+        search_existing: false
